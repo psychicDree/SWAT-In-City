@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9016822600342436600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9016822600342436484}
+  - component: {fileID: 9016822600342436485}
+  - component: {fileID: 9016822600342436602}
+  - component: {fileID: 9016822600342436603}
+  - component: {fileID: 9016822600342436487}
+  - component: {fileID: 9016822600342436481}
+  - component: {fileID: 9016822600342436480}
+  - component: {fileID: 9016822600342436483}
+  - component: {fileID: 9016822600342436482}
+  - component: {fileID: 9016822600342436493}
+  - component: {fileID: 9016822600342436492}
+  - component: {fileID: 862924807}
+  - component: {fileID: 4645735813240770862}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9016822600342436484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9016822600342436485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3c9b1ef4a5ed7458450d08d55ec05c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGameOver: 0
+  isInventoryUIOn: 0
+  isMenuOn: 0
+--- !u!114 &9016822600342436602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecf2b63a159ac2d43ac712d1d91dde08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9016822600342436603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f145594714736448bb861a258804794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 0}
+  pauseButtonName: 
+--- !u!114 &9016822600342436487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fe7872c92a92c44be707b7f6275049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerController: {fileID: 0}
+--- !u!114 &9016822600342436481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912ff317654006a4f8da0564df3755ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  enemyTag: Enemy
+--- !u!114 &9016822600342436480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb144f8b3e0c59e4f900aa30d1b3ec75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasInventory: 1
+  inventoryUI: {fileID: 0}
+  toggleInventoryButton: Toggle Inventory
+--- !u!114 &9016822600342436483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725a8165c4b6f27448f5aedade77d621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9016822600342436482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3571f4c0bdff2499bef0e658c55ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9016822600342436493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52aadb39c7874014787de176e3c1423e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelGameOver: {fileID: 0}
+--- !u!114 &9016822600342436492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cdfcbd44e372ba4db1ba1f2a976c249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelInstructions: {fileID: 0}
+--- !u!114 &862924807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ccdd4bc11a3f2478ab86b87f757887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostileThreshold: 40
+  npcRelationsArray:
+  - npcFaction: Player
+    npcRelations:
+    - npcTag: Player
+      npcFactionRating: 100
+    - npcTag: Friendly
+      npcFactionRating: 100
+    - npcTag: Enemy
+      npcFactionRating: 25
+    - npcTag: EnemySwat
+      npcFactionRating: 25
+    myFriendlyTags: []
+    myEnemyTags: []
+    myFriendlyLayers:
+      serializedVersion: 2
+      m_Bits: 0
+    myEnemyLayers:
+      serializedVersion: 2
+      m_Bits: 0
+  - npcFaction: Friendly
+    npcRelations:
+    - npcTag: Player
+      npcFactionRating: 100
+    - npcTag: Friendly
+      npcFactionRating: 100
+    - npcTag: Enemy
+      npcFactionRating: 25
+    - npcTag: EnemySwat
+      npcFactionRating: 25
+    myFriendlyTags: []
+    myEnemyTags: []
+    myFriendlyLayers:
+      serializedVersion: 2
+      m_Bits: 0
+    myEnemyLayers:
+      serializedVersion: 2
+      m_Bits: 0
+  - npcFaction: Enemy
+    npcRelations:
+    - npcTag: Player
+      npcFactionRating: 25
+    - npcTag: Friendly
+      npcFactionRating: 25
+    - npcTag: Enemy
+      npcFactionRating: 100
+    - npcTag: EnemySwat
+      npcFactionRating: 25
+    myFriendlyTags: []
+    myEnemyTags: []
+    myFriendlyLayers:
+      serializedVersion: 2
+      m_Bits: 0
+    myEnemyLayers:
+      serializedVersion: 2
+      m_Bits: 0
+  - npcFaction: EnemySwat
+    npcRelations:
+    - npcTag: Player
+      npcFactionRating: 25
+    - npcTag: Friendly
+      npcFactionRating: 25
+    - npcTag: Enemy
+      npcFactionRating: 25
+    - npcTag: EnemySwat
+      npcFactionRating: 100
+    myFriendlyTags: []
+    myEnemyTags: []
+    myFriendlyLayers:
+      serializedVersion: 2
+      m_Bits: 0
+    myEnemyLayers:
+      serializedVersion: 2
+      m_Bits: 0
+--- !u!114 &4645735813240770862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9016822600342436600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34b5cd238515fa54399204e4222fdf55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
